@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sports Ecommerce</title>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light" id="headernav">
+        <div class="container">
+            <div id="branding">
+                <a href="#" class="navbar-brand">SHOP</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navmenu">
+                <ul class="navbar-nav  ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PICNIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PROMOTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  text-primary">CONTACT US</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse navmenu ">
+                <ul class="navbar-nav  ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><span class="material-icons">
+                                search
+                            </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><span class="material-icons">
+                                shopping_cart
+                            </span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><span class="material-icons">
+                                list
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="contact" class="container mt-3" onload="check()">
+        <div id="alertmsg">
+
+        </div>
+        <section class="highlight mx-2 my-2 p-5" id="signup">
+            <div class="text-white"> Sign up To <br> <span class="text-danger">Explore The Thrill</span></div>
+            <div>
+                <form action="#" id="signupform" method="POST" novalidate>
+                    <div>
+                        <input type="text" id="fname" name="fname" placeholder="First-Name"
+                            class="form-control bg-transparent text-white m-2" required autocomplete="off">
+                        <div>
+                            <input type="text" id="lname" name="lname" placeholder="Last-Name"
+                                class="form-control bg-transparent text-white m-2" required autocomplete="off">
+                        </div>
+                        <div>
+                            <input type="email" id="mail" name="mail" placeholder="E-Mail"
+                                class="form-control  bg-transparent text-white m-2" required autocomplete="off">
+                        </div>
+                        <div>
+                            <input type="password" id="pass" name="pass" placeholder="Password"
+                                class="form-control bg-transparent text-white m-2" required autocomplete="off">
+                        </div>
+                        <div>
+                            <input type="password" id="cpass" name="cpass" placeholder="Confirm-Password"
+                                class="form-control bg-transparent text-white m-2" required autocomplete="off">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button id="signbtn" type="button" class="btn btn-success m-2 " onclick="submitform()">Join
+                                In</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <section class="highlight mx-2  my-2 p-2">
+            <div>
+                <img src="images/address.jpg" alt="" class="image">
+            </div>
+            <div id="address">
+                <div>
+                    <p>Address</p>
+                    Street 108, Birla Avennue, Near TheZest Mall,<br>
+                    Chinchwad, Pune, Maharashtra-411035. <br>
+                    Email : contact.CarzyFoodie@tasty.com <br>
+                    Phone : +91 9876543210 <br>
+                    Registration-Desk : +020 278945632
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer big  -->
+    <footer class="container mt-4">
+        <section id="footerimg">
+            <div id="footerover">
+                <div>
+                    <img src="images/footerprofile.jpg" class="img border-1 rounded-circle" id="footprof"
+                        alt="elon_img">
+                </div>
+                <div>
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p> <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae odit earum
+                                    repudiandae officiis doloribus. Suscipit dolorem eaque reiciendis facilis minus
+                                    illum
+                                    odio labore corrupti possimus libero blanditiis, rerum saepe! </q></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-white">
+                            ELON MUSK <br> <cite title="Source Title">CEO and product architect of Tesla Motor</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col text-white text-center py-3" style="background-color:rgb(4,4,70) ;">
+                        <i class="fa fa-facebook mx-2"></i> FACEBOOK
+                    </div>
+                    <div class="col text-white text-center py-3" style="background-color: rgb(82, 194, 246);">
+                        <i class="fa fa-twitter mx-2"></i>TWITTER
+                    </div>
+                    <div class="col text-white text-center py-3" style="background-color:rgb(184, 23, 130);">
+                        <i class="fa fa-instagram mx-2"></i>INSTAGRAM
+                    </div>
+                    <div class="col text-white text-center py-3" style="background-color:rgb(218, 95, 177);">
+                        <i class="fa fa-dribbble mx-2"></i>DRIBBBLE
+                    </div>
+                    <div class="col text-white text-center py-3" style="background-color:rgb(192, 43, 55);">
+                        <i class="fa fa-pinterest-p mx-2"></i> PINTEREST
+                    </div>
+                </div>
+            </section>
+            <section class="foot bg-black text-center">
+                <img src="images/logo2.png" alt="no" height="50" width="100" class="mt-5">
+                <p class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Minus obcaecati molestiae commodi, iure nesciunt repudiandae<br>
+                    quaerat aspernatur deserunt</p>
+                <img src="images/cards.png" alt="no" height="50" width="250" class="mt-2">
+            </section>
+            <section class="text-center py-3 align-middle">
+
+                <small>Copyright @2021 Desgined by <span class="text-primary">
+                        TheZest</span> - All Right
+                    Reserved</small>
+            </section>
+        </section>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="valid.js"></script>
+</body>
+
+</html>
